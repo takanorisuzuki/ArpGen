@@ -42,6 +42,3 @@ class ArpGen:
         addr = mac.hex[-12:]
         mac_addr = ":".join(re.split('(..)',addr)[1::2])
         return mac_addr
-
-# arp = ArpGen("ens192")
-# arp.pkt_gen(get_mac_addr(),"ff:ff:ff:ff:ff:ff","10.149.0.1","10.149.100.25")
